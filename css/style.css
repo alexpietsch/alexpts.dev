@@ -78,13 +78,12 @@ body {
 .nav ul{
     /* margin-top: ; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;  
     padding: 0; 
 }
 .nav ul li a{
     color: #fff;
-    text-decoration: none;
 }
   
 .card-wrapper{
@@ -96,7 +95,6 @@ body {
 }
 
 .card{
-    width: 350px;
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -105,9 +103,34 @@ body {
 .card a{
     color: #fff;
 }
-.card p{
-    font-size: .9em;
-}
 #projects{
     padding-bottom: 5vh;
+}
+
+@media screen and (min-width: 551px) {
+    .card{
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+    }
+    .card p{
+        font-size: 1em;
+    }
+    .card .title{
+        font-size: 1.5em;
+    }
+    .grid-bio p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .card{
+        width: 350px;
+    }
+    .card p{
+        font-size: .8em;
+    }
+    .card .title{
+        font-size: 1.2em;
+    }
 }
