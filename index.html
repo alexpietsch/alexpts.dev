@@ -28,7 +28,7 @@
                         <span class="bio">Hey👋</span><br/>
                         <p class="bio">I'm Alex, and <span id="age"></span> years old.</p>
                         <p>I am currently doing an apprenticeship as an IT specialist at an international consumer electronics retailer in Europe.</p>
-                        <p>In my free time write code.</p>
+                        <p>In my free time I write code.</p>
                     </div>
                 </div>
                 <div class="nav">
@@ -62,7 +62,7 @@
         </div>
     </div>
     <script>
-        let age = new Date().getFullYear() - 2002;
+        let age = Math.floor((new Date() - new Date(2002, 06, 19)) / (365.25 * 24 * 60 * 60 * 1000));
         document.getElementById("age").innerHTML = age;
     </script>
 </body>
