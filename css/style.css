@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 375px;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #24292f;
+}
+
+.center-content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 500px;
+    height: 350px;
+    padding: 20px;
+    background-color: #24292f;
+    color: #fff;
+    overflow-wrap: break-word;
+}
+
+.avatar{border-radius: 50%;}
+
+.location{
+    font-size: .7em;
+    color:#999999;
+}
+
+.name, .username{
+    margin: 0px;
+    color: #fff;
+}
+
+.link-icons:focus, .link-icons:active, .link-icons{
+    color: #fff;
+}
+
+.grid-container {
+    max-height: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "grid-avatar grid-bio";
+}
+.grid-avatar { grid-area: grid-avatar;}
+.grid-bio { grid-area: grid-bio; }
+.grid-bio p{
+    font-size: .8em;
+}
+
+.nav{
+    margin: 20px;
+}
+.nav ul{
+    /* margin-top: ; */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;  
+    padding: 0; 
+}
+.nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+  
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card{
+    width: 350px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2d3237;
+}
+.card a{
+    color: #fff;
+}
+.card p{
+    font-size: .9em;
+}
+#projects{
+    padding-bottom: 5vh;
+}

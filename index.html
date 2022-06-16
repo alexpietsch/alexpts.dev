@@ -5,10 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alexpts.dev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9a1311094f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>
-        Welcome to my website! 
-    </h1>
+    <div class="panel">
+        <div class="center-content">
+            <div class="box">
+                <div class="grid-container">
+                    <div class="grid-avatar">
+                        <img class="avatar" src="https://avatars.githubusercontent.com/u/54153428?v=4" alt="GitHub avatar" height="50%" width="auto">
+                        <br/><span class="location"><i class="fa-solid fa-location-dot"></i> Germany</span>
+                        <p class="name">Alex</p>
+                        <a class="username" href="https://github.com/alexpietsch">alexpietsch</a>
+                        <div>
+                            <a class="link-icons" href="https://www.linkedin.com/in/alexander-pietsch-a1525b204/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a class="link-icons" href="https://github.com/alexpietsch" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a class="link-icons" href="mailto:mail@alexpts.dev"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="grid-bio">
+                        <span class="bio">Hey👋</span><br/>
+                        <p class="bio">I'm Alex, and <span id="age"></span> years old.</p>
+                        <p>I am currently doing an apprenticeship as an IT specialist at an international consumer electronics retailer in Europe.</p>
+                        <p>In my free time write code.</p>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel" id="projects">
+        <center><h1>Projects</h1></center>
+        <div class="card-wrapper">
+            <div class="card">
+                <h3><a href="https://kira.alexpts.dev">Kira</a></h3>
+                <p>My first full react app. A Trello style, web based, cloud organization app build with react and firebase. It supports drag'n'drop functionality </p>
+            </div>
+            <div class="card">
+                <h3><a href="https://alexpts.de/short">alexpts.de/short</a></h3>
+                <p>A simple link shortener service build with MySQL and PHP.</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://alexpts.de/startpage">alexpts.de/startpage</a></h3>
+                <p>A browser startpage with some simple PHP to grab a new background image every day via <a href="https://api.nasa.gov/">the NASA APOD API</a></p>
+            </div>
+            <div class="card">
+                <h3><a href="https://alexpts.de/ta">alexpts.de/ta</a></h3>
+                <p>A simple analyzer for personal TikTok usage data, written in js. It simply counts stats like viewed videos or written comments.</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let age = new Date().getFullYear() - 2002;
+        document.getElementById("age").innerHTML = age;
+    </script>
 </body>
 </html>
