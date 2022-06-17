@@ -29,20 +29,21 @@
                     <div class="grid-bio">
                         <span class="bio">Hey👋</span><br/>
                         <p class="bio">I'm Alex, and <span id="age"></span> years old.</p>
-                        <p>I am currently doing an apprenticeship as an IT specialist at an international consumer electronics retailer in Europe.</p>
-                        <p>In my free time I write code.</p>
+                        <p>I am currently in an apprenticeship as an IT specialist at an international consumer electronics retailer in Europe.</p>
+                        <p>In my spare time I write code.</p>
                     </div>
                 </div>
                 <div class="nav">
                     <ul>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="panel" id="projects">
-        <center><h1>Projects</h1></center>
+        <h1 class="headline">Projects</h1>
         <div class="card-wrapper">
             <div class="card">
                 <a class="title" href="https://kira.alexpts.dev" target="_blank">Kira</a>
@@ -62,6 +63,45 @@
             </div>
         </div>
     </div>
+    <div class="panel" id="contact">
+        <h1 class="headline">Feel free to contact me :)</h1>
+        <div class="contact-wrapper">
+            <div class="contact-container">
+                <div class="grid-form">
+                    <div class="contact-box contact-box-l">
+                        <form class="contact-form" action="https://formsubmit.co/mail@alexpts.dev" method="POST">
+                            <h2 class="headline">Write me</h2>
+                            <input type="hidden" name="_subject" value="alexpts.dev contact form">
+                            <input type="hidden" name="_template" value="table">
+            
+                            <input type="text" name="name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea rows="4" name="message" placeholder="Your message" required></textarea>
+                            <button type="submit">Send</button>
+                       </form> 
+                    </div>
+                </div>
+                <div class="grid-details">
+                    <div class="contact-box contact-box-r">
+                        <p>You can also contact me via email or via the links below.</p>
+                        <a href="mailto:mail@alexpts.dev" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/alexpietsch" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/alexander-pietsch-a1525b204/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    
+                        
+
+                </div>
+              </div>
+        </div>
+        </div>
+        
     <script>
         let age = Math.floor((new Date() - new Date(2002, 06, 19)) / (365.25 * 24 * 60 * 60 * 1000));
         document.getElementById("age").innerHTML = age;

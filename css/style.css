@@ -20,7 +20,6 @@ body {
 .panel{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 100vh;
     background-color: #24292f;
 }
@@ -76,9 +75,8 @@ body {
     margin: 20px;
 }
 .nav ul{
-    /* margin-top: ; */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;  
     padding: 0; 
 }
@@ -107,6 +105,79 @@ body {
     padding-bottom: 5vh;
 }
 
+.headline{
+    text-align: center;
+}
+
+.grid-form { grid-area: form; }
+.grid-details { grid-area: details; }
+
+#contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    max-width: 500px;
+    height: 500px;
+    box-sizing: inherit;
+}
+.contact-box-l{
+    border-radius: 20px 0px 0px 20px;
+    background-color: #343a40;
+}
+.contact-box-r{
+    border-radius: 0px 20px 20px 0px;
+    background-color: #2d3237;
+}
+
+.contact-box input, textarea{
+    min-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    background-color: #3d434a;
+    color: #fff;
+}
+
+.contact-box i{
+    color: #fff;
+    font-size: 30px;
+    margin: 10px;
+}
+.contact-box-r{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3d434a;
+    color: #fff;
+}
+
+
 @media screen and (min-width: 551px) {
     .card{
         width: 400px;
@@ -122,6 +193,14 @@ body {
     .grid-bio p{
         font-size: 1em;
     }
+    .contact-container {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "form details"; 
+    }
 }
 @media screen and (max-width: 550px) {
     .card{
@@ -132,5 +211,29 @@ body {
     }
     .card .title{
         font-size: 1.2em;
+    }
+    .contact-container {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "form"
+          "details";
+    }
+    .contact-box-l{
+        border-radius: 20px 20px 0px 0px;
+        background-color: #343a40;
+        
+    }
+    .contact-box-r{
+        border-radius: 0px 0px 20px 20px;
+        background-color: #2d3237;
+    }
+    .contact-box{
+        width: 100%;
+        padding: 20px;
+        max-width: 350px;
+        max-height: 350px;
     }
 }
