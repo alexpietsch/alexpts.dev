@@ -176,6 +176,10 @@ body {
     background-color: #3d434a;
     color: #fff;
 }
+.contact-form button:hover{
+    background-color: #2d3237;
+    cursor: pointer;
+}
 
 
 @media screen and (min-width: 551px) {
