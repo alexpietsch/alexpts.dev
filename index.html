@@ -79,7 +79,7 @@
                             <input type="email" name="email" placeholder="Your email" required>
                             <textarea rows="4" name="message" placeholder="Your message" required></textarea>
                             <button type="submit">Send</button>
-                       </form> 
+                        </form> 
                     </div>
                 </div>
                 <div class="grid-details">
@@ -95,16 +95,12 @@
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
-                    
-                        
-
                 </div>
-              </div>
+            </div>
         </div>
-        </div>
-        
+    </div>
     <script>
-        let age = Math.floor((new Date() - new Date(2002, 06, 19)) / (365.25 * 24 * 60 * 60 * 1000));
+        const age = Math.abs(new Date(Date.now() - new Date("06/19/2002").getTime()).getUTCFullYear() - 1970);
         document.getElementById("age").innerHTML = age;
     </script>
 </body>

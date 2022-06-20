@@ -2,16 +2,17 @@
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  min-width: 375px;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    min-width: 375px;
+    scroll-behavior: smooth;
 }
 body {
-  height: 100vh;
-  width: 100vw;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
 }
 * {
     box-sizing: border-box;
@@ -63,7 +64,7 @@ body {
     grid-template-rows: 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      "grid-avatar grid-bio";
+        "grid-avatar grid-bio";
 }
 .grid-avatar { grid-area: grid-avatar;}
 .grid-bio { grid-area: grid-bio; }
@@ -83,7 +84,7 @@ body {
 .nav ul li a{
     color: #fff;
 }
-  
+
 .card-wrapper{
     display: flex;
     justify-content: center;
@@ -203,7 +204,7 @@ body {
         grid-template-rows: 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
-          "form details"; 
+            "form details"; 
     }
 }
 @media screen and (max-width: 550px) {
@@ -222,8 +223,8 @@ body {
         grid-template-rows: 1fr 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
-          "form"
-          "details";
+            "form"
+            "details";
     }
     .contact-box-l{
         border-radius: 20px 20px 0px 0px;
