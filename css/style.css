@@ -86,15 +86,15 @@ body {
 }
 
 .card-wrapper{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3 , 250px);
+    grid-gap: 10px 10px;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
 }
 
 .card{
-    margin-top: 10px;
+    margin: 50px;
     padding: 10px;
     border-radius: 10px;
     background-color: #2d3237;
@@ -183,9 +183,10 @@ body {
 }
 
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 768px) {
     .card{
-        width: 400px;
+        max-width: 400px;
+        min-width: 330px;
         height: 200px;
         padding: 20px;
     }
@@ -207,9 +208,13 @@ body {
             "form details"; 
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
+    .card-wrapper{
+        display: inline
+    }
     .card{
-        width: 350px;
+        min-width: 350px;
+        margin: 20px 10px 0px 10px;
     }
     .card p{
         font-size: .8em;
