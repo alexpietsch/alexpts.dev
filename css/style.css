@@ -98,6 +98,10 @@ body {
     padding: 10px;
     border-radius: 10px;
     background-color: #2d3237;
+    transition: transform .2s;
+}
+.card:hover{
+    transform: translateY(-10px);
 }
 .card a{
     color: #fff;
