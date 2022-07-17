@@ -11,15 +11,18 @@
     <script src="https://kit.fontawesome.com/9a1311094f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/man-technologist_1f468-200d-1f4bb.png">
 </head>
-<body>
+<body class="">
     <div class="panel">
+        <div class="switch-wrapper" >
+            <input type="checkbox" id="toggle-switch" class="toggle-switch">
+        </div>
         <div class="center-content">
             <div class="box">
                 <div class="grid-container">
                     <div class="grid-avatar">
                         <img class="avatar" src="https://avatars.githubusercontent.com/u/54153428?v=4" alt="GitHub avatar" height="50%" width="auto">
                         <br/><span class="location"><i class="fa-solid fa-location-dot"></i> Bavaria, Germany</span>
-                        <p class="name">Alex</p>
+                        <p class="name dark || light">Alex</p>
                         <a class="username" href="https://github.com/alexpietsch">alexpietsch</a>
                         <div>
                             <a class="link-icons" href="https://www.linkedin.com/in/alexander-pietsch-a1525b204/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -90,13 +93,13 @@
                 <div class="grid-details">
                     <div class="contact-box contact-box-r">
                         <p>You can also contact me via email or via the links below.</p>
-                        <a href="mailto:mail@alexpts.dev" target="_blank">
+                        <a href="mailto:mail@alexpts.dev" target="_blank" class="link-icons">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
-                        <a href="https://github.com/alexpietsch" target="_blank">
+                        <a href="https://github.com/alexpietsch" target="_blank" class="link-icons">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com/in/alexander-pietsch-a1525b204/" target="_blank">
+                        <a href="https://linkedin.com/in/alexander-pietsch-a1525b204/" target="_blank" class="link-icons">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
@@ -105,8 +108,26 @@
         </div>
     </div>
     <script>
-        const age = Math.abs(new Date(Date.now() - new Date("06/19/2002").getTime()).getUTCFullYear() - 1970);
-        document.getElementById("age").innerHTML = age;
+
+        document.getElementById("age").innerHTML = Math.abs(new Date(Date.now() - new Date("06/19/2002").getTime()).getUTCFullYear() - 1970);
+
+        const btn = document.querySelector('#toggle-switch');
+        const currentTheme = localStorage.getItem("theme");
+
+        if(currentTheme === "light"){
+            document.body.classList.add("light");
+        }
+
+        btn.addEventListener('click', function() {
+            console.info(document.body.classList)
+            document.body.classList.toggle('light');
+
+            let theme = "dark";
+            if(document.body.classList.contains("light")){
+                theme = "light";
+            }
+            localStorage.setItem("theme", theme);
+        })
     </script>
 </body>
 </html>
