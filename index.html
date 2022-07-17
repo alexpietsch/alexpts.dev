@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>alexpts.dev</title>
-    <meta name="description" content="Welcome on alexpts.dev!">
+    
+    <meta name="description" content="Welcome on alexpts.dev!" />
+    <meta property="og:title" content="alexpts.dev" />
+    <meta property="og:url" content="https://alexpts.dev" />
+    <meta property="og:description" content="Welcome on alexpts.dev!" />
+    <meta property="og:image" content="https://alexpts.dev/assets/icon.png" />
     <meta name="theme-color" content="#24292f">
+
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/9a1311094f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/man-technologist_1f468-200d-1f4bb.png">
@@ -111,14 +118,15 @@
 
         document.getElementById("age").innerHTML = Math.abs(new Date(Date.now() - new Date("06/19/2002").getTime()).getUTCFullYear() - 1970);
 
-        const btn = document.querySelector('#toggle-switch');
+        const checkbox = document.getElementById('toggle-switch');
         const currentTheme = localStorage.getItem("theme");
 
         if(currentTheme === "light"){
             document.body.classList.add("light");
+            checkbox.checked = true;
         }
 
-        btn.addEventListener('click', function() {
+        checkbox.addEventListener('click', function() {
             console.info(document.body.classList)
             document.body.classList.toggle('light');
 
