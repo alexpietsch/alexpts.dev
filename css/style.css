@@ -54,6 +54,8 @@ body {
 
 .link-icons:focus, .link-icons:active, .link-icons{
     color: #fff;
+    font-size: 1.5em;
+    margin-right: 10px;
 }
 
 .grid-container {
