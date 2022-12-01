@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: Poppins;
+    src: url('../assets/Poppins-Regular.ttf');
+}
 
 * {
     box-sizing: border-box;
@@ -90,7 +93,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3 , 250px);
-    grid-gap: 10px 10px;
+    grid-gap: 20px 10px;
     justify-content: center;
 }
 
@@ -108,7 +111,7 @@ body {
     color: #fff;
 }
 #projects{
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
 }
 
 .headline{
@@ -192,7 +195,7 @@ body {
     .card{
         max-width: 400px;
         min-width: 330px;
-        height: 200px;
+        height: 250px;
         padding: 20px;
     }
     .card p{
