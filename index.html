@@ -18,34 +18,8 @@
     <script src="https://kit.fontawesome.com/9a1311094f.js" crossorigin="anonymous" async></script>
     <link rel="icon" href="./assets/favicon.ico">
 
-    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-        <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
-        <script type="text/javascript" charset="UTF-8">
-            document.addEventListener('DOMContentLoaded', function () {
-                cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"alexpts.dev"});
-            });
-        </script>
-        <!-- Google Analytics -->
-
-        <!-- Google tag (gtag.js) -->
-            <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-XYXHTS3TPX"></script>
-            <script type="text/plain" cookie-consent="tracking">
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'G-XYXHTS3TPX');
-            </script>
-
-        <!-- end of Google Analytics-->
-
-        <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/" rel="nofollow noopener">TermsFeed Policy Generator</a></noscript>
-        <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-
-
 </head>
 <body class="">
-    <a aria-label="cookie preferences" class="link-icons" style="position: fixed; right: 0; bottom: 0;" href="#" id="open_preferences_center"><i class="fa-solid fa-cookie-bite"></i></a>
     <div class="panel">
         <div class="switch-wrapper" >
             <input type="checkbox" id="toggle-switch" class="toggle-switch" aria-label="darkmode toggel switch">
@@ -84,33 +58,37 @@
         <h1 class="headline">Projects</h1>
         <div class="card-wrapper">
             <div class="card" style="grid-column: 1 / 3; grid-row: 1 / 2;">
-                <a class="title" href="https://kira.alexpts.dev" target="_blank">Kira <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a>
+                <div class="card-title"><a class="title" href="https://kira.alexpts.dev" target="_blank">Kira <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a><a href="https://github.com/alexpietsch/kira" target="_blank"><i class="fa-brands fa-github link-icons"></i></a></div>
                 <p>My first app build completely with React. A Trello style, web based, open-source, drag'n'drop organization app build with react and firebase.</p>
             </div>
             <div class="card" style="grid-column: 3 / 5; grid-row: 1 / 2;">
-                <a class="title" href="https://alexpts.de/short" target="_blank">alexpts.de/short <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a>
-                <p>A simple link shortener service build with MySQL and PHP.</p>
+                <div class="card-title"><a class="title" href="https://s.alexpts.dev" target="_blank">Random identity <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a><a href="https://github.com/alexpietsch/random-identity" target="_blank"><i class="fa-brands fa-github link-icons"></i></a></div>
+                <p>A page to generate a random temporary identity (username, password, first and last name) along with a "10 minute email" that you can use to receive login codes for websites, for example.</p>
             </div>
             <div class="card" style="grid-column: 1 / 3; grid-row: 2 / 3;">
-                <a class="title" href="https://alexpts.de/startpage" target="_blank">alexpts.de/startpage <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a>
-                <p>A browser startpage with some simple PHP to grab a new background image every day via <a href="https://api.nasa.gov/">the NASA APOD API</a>. It can also display the local live weather</p>
+                <div class="card-title"><a class="title" href="https://s.alexpts.dev" target="_blank">MERN URL-Shortener <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a><a><i class=""></i></a></div>
+                <p>The newer version of my URL-Shortener. This app is fully build on the MERN-Stack and consists of an NodeJS+ExpressJS Backend hosted on Google Cloud Run, a MongoDB Cluster and a React Frontend as well as a CI/CD Pipeline.</p>
             </div>
             <div class="card" style="grid-column: 3 / 5; grid-row: 2 / 3;">
-                <a class="title" href="https://alexpts.de/ta" target="_blank">alexpts.de/ta <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a>
-                <p>A simple analyzer for personal TikTok usage data, written in js. It simply counts stats like viewed videos or written comments.</p>
+                <div class="card-title"><a class="title" href="https://alexpts.de/short" target="_blank">alexpts.de/short <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a><a> <i class=""></i></a></div>
+                <p>A simple link shortener service build with MySQL and PHP.</p>
             </div>
             <div class="card" style="grid-column: 1 / 3; grid-row: 3 / 4;">
-                <a class="title" href="https://noten.alexpts.dev" target="_blank">Notenblatt <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a>
-                <p>A grade overview app with automatic calculation of grade averages for individual subjects and overall average.</p>
+                <div class="card-title"><a class="title" href="https://alexpts.de/startpage" target="_blank">alexpts.de/startpage <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a><a href="https://github.com/alexpietsch/startpage" target="_blank"><i class="fa-brands fa-github link-icons"></i></a></div>
+                <p>A browser startpage with some simple PHP to grab a new background image every day via <a href="https://api.nasa.gov/">the NASA APOD API</a>. It can also display the local live weather</p>
             </div>
             <div class="card" style="grid-column: 3 / 5; grid-row: 3 / 4;">
-                <a class="title" href="https://s.alexpts.dev" target="_blank">MERN URL-Shortener <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a>
-                <p>The newer version of my URL-Shortener. This app is fully build on the MERN-Stack and consists of an NodeJS+ExpressJS Backend hosted on Google Cloud Run, a MongoDB Cluster and a React Frontend as well as a CI/CD Pipeline.</p>
+                <div class="card-title"><a class="title" href="https://alexpts.de/ta" target="_blank">alexpts.de/ta <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a><a href="https://github.com/alexpietsch/tiktok_data_analyser" target="_blank"><i class="fa-brands fa-github link-icons"></i></a></div>
+                <p>A simple analyzer for personal TikTok usage data, written in js. It simply counts stats like viewed videos or written comments.</p>
+            </div>
+            <div class="card" style="grid-column: 1 / 3; grid-row: 4 / 5;">
+                <div class="card-title"><a class="title" href="https://noten.alexpts.dev" target="_blank">Notenblatt <i class="fa-solid fa-up-right-from-square" style="font-size: .8em;"></i></a><a> <i class=""></i></a></div>
+                <p>A grade overview app with automatic calculation of grade averages for individual subjects and overall average.</p>
             </div>
         </div>
     </div>
     <div class="panel" id="contact">
-        <h1 class="headline">Feel free to contact me :)</h1>
+        <h1 class="headline">Feel free to contact me :&#41;</h1>
         <div class="contact-wrapper">
             <div class="contact-container">
                 <div class="grid-form">
@@ -146,7 +124,6 @@
         </div>
     </div>
     <script>
-
         document.getElementById("age").innerHTML = Math.abs(new Date(Date.now() - new Date("06/19/2002").getTime()).getUTCFullYear() - 1970);
 
         const checkbox = document.getElementById('toggle-switch');

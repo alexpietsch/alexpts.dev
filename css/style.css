@@ -104,6 +104,10 @@ body {
     background-color: #2d3237;
     transition: transform .2s;
 }
+.card-title{
+    display: flex;
+    justify-content: space-between;
+}
 .card:hover{
     transform: translateY(-10px);
 }
